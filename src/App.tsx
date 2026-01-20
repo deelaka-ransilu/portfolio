@@ -43,7 +43,7 @@ function App() {
       title: "Technical Support Executive",
       company: "myPOS Software Solutions (Pvt) Ltd",
       location: "Nugegoda, Western Province",
-      period: "July 2025 - January 2026",
+      period: "Jul 2025 - Jan 2026",
       highlights: [
         "Managed Windows Servers on Microsoft Azure for POS and ERP systems",
         "Configured Nginx web servers for load balancing and SSL/SSH certificates",
@@ -57,7 +57,7 @@ function App() {
       title: "Social Media Manager",
       company: "Skin & Sapphire Hair Transplant",
       location: "Battaramulla, Western Province",
-      period: "September 2023 - December 2023",
+      period: "Sep 2023 - Dec 2023",
       highlights: [
         "Managed social media presence and content strategy",
         "Created engaging content for brand awareness",
@@ -233,9 +233,7 @@ function App() {
       >
         <div className="max-w-6xl px-6 py-4 mx-auto">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text">
-              Deelaka.dev
-            </div>
+            <div className="text-2xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text"></div>
 
             {/* Desktop Menu */}
             <div className="hidden gap-8 md:flex">
@@ -301,18 +299,10 @@ function App() {
         id="home"
         className="relative flex items-center justify-center min-h-screen px-6 pt-20 overflow-hidden"
       >
-        {/* Animated background elements */}
         <div className="absolute rounded-full top-20 left-10 w-72 h-72 bg-blue-500/5 blur-3xl animate-pulse-slow"></div>
         <div className="absolute delay-500 rounded-full bottom-20 right-10 w-96 h-96 bg-purple-500/5 blur-3xl animate-pulse-slow"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <div
-            className={`inline-block mb-4 px-4 py-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 rounded-full text-sm font-medium ${
-              isVisible ? "animate-fadeInUp" : "opacity-0"
-            }`}
-          >
-            👋 Welcome to my portfolio
-          </div>
           <h1
             className={`text-5xl md:text-7xl font-bold mb-6 gradient-text ${
               isVisible ? "animate-fadeInUp delay-100" : "opacity-0"
@@ -473,10 +463,10 @@ function App() {
                   index === 0
                     ? "delay-100"
                     : index === 1
-                    ? "delay-200"
-                    : index === 2
-                    ? "delay-300"
-                    : "delay-400"
+                      ? "delay-200"
+                      : index === 2
+                        ? "delay-300"
+                        : "delay-400"
                 }`}
               >
                 <CardContent className="p-6">
@@ -515,10 +505,10 @@ function App() {
                   index === 0
                     ? "delay-100"
                     : index === 1
-                    ? "delay-200"
-                    : index === 2
-                    ? "delay-300"
-                    : "delay-400"
+                      ? "delay-200"
+                      : index === 2
+                        ? "delay-300"
+                        : "delay-400"
                 }`}
               >
                 <div

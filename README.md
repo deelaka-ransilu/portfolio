@@ -28,7 +28,7 @@ A modern, dark-themed portfolio website showcasing my projects, skills, and prof
 
 ```bash
 # Clone the repository
-git clone https://github.com/deelaka-24/portfolio.git
+git clone https://github.com/deelaka-ransilu/portfolio.git
 
 # Navigate to project directory
 cd portfolio
