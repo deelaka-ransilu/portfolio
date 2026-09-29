@@ -1,0 +1,47 @@
+===== PROJECT STRUCTURE: portfolio =====
+===== Generated: 09/29/2026 07:34:35 =====
+
++---public
+|   +---CNAME
+|   +---fav.png
+|   +---og-image.png
+|   +---robots.txt
+|   +---sitemap.xml
++---src
+|   +---assets
+|   |   +---react.svg
+|   +---components
+|   |   +---Contact.tsx
+|   |   +---Cursor.tsx
+|   |   +---DevOps.tsx
+|   |   +---Experience.tsx
+|   |   +---Footer.tsx
+|   |   +---Hero.tsx
+|   |   +---Marquee.tsx
+|   |   +---Navbar.tsx
+|   |   +---Project.tsx
+|   |   +---Skills.tsx
+|   +---hooks
+|   |   +---useLenis.ts
+|   |   +---useReveal.ts
+|   +---lib
+|   |   +---utils.ts
+|   +---App.tsx
+|   +---index.css
+|   +---main.tsx
++---.gitignore
++---collected-seo-portfolio-files.txt
++---components.json
++---components.json.bak
++---eslint.config.js
++---index.html
++---package-lock.json
++---package.json
++---postcss.config.js
++---project-structure.txt
++---README.md
++---tailwind.config.js
++---tsconfig.app.json
++---tsconfig.json
++---tsconfig.node.json
++---vite.config.ts
