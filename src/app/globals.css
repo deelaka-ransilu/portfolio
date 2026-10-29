@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Palette: cool white-blue phosphor on ink. Swap these five values to re-theme. */
+:root {
+  --bg: #0b1014;
+  --line: #22313b;
+  --text: #d7e3ea;
+  --dim: #7b8f9c;
+  --accent: #7fd8e8;
+}
+
+html, body { margin: 0; background: var(--bg); color: var(--text); }
+body { font-size: 1.0625rem; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+
+.screen { min-height: 100dvh; padding: 1.25rem 1rem 3rem; display: flex; justify-content: center; }
+.term { width: 100%; max-width: 46rem; }
+.term p { margin: 0 0 0.35rem; max-width: 70ch; }
+
+.dim { color: var(--dim); }
+.prompt { color: var(--accent); }
+
+.cmds { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.25rem 0; }
+.cmd {
+  font: inherit; color: var(--accent); background: transparent;
+  border: 1px solid var(--line); border-radius: 4px;
+  padding: 0.55rem 0.8rem; min-height: 44px; cursor: pointer;
+}
+.cmd:hover { border-color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.entry { border-top: 1px solid var(--line); padding-top: 0.75rem; margin-top: 0.75rem; }
+
+.form { display: flex; gap: 0.6rem; align-items: center; margin-top: 1rem; }
+.form input {
+  flex: 1; min-width: 0; font: inherit; color: var(--text);
+  background: transparent; border: 0; border-bottom: 1px solid var(--line);
+  padding: 0.5rem 0; border-radius: 0;
+}
+.form input:focus { outline: none; border-bottom-color: var(--accent); }
