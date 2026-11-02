@@ -1,18 +1,27 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono } from "next/font/google";
+import { Space_Mono } from "next/font/google";
 import "./globals.css";
 
-const mono = IBM_Plex_Mono({ weight: ["400", "500"], subsets: ["latin"] });
+const mono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-mono",
+});
 
 export const metadata: Metadata = {
-  title: "Deelaka Ransilu",
-  description: "Portfolio of Deelaka Ransilu.",
+  title: "Deelaka Ransilu | Web Developer",
+  description:
+    "Deelaka Ransilu, full-stack web developer aiming for DevOps and SRE.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <body className={mono.className}>{children}</body>
+    <html lang="en" className={mono.variable}>
+      <body>{children}</body>
     </html>
   );
 }
