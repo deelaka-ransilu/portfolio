@@ -72,7 +72,8 @@ export default function PixelField() {
     let w = 0;
     let h = 0;
     let raf = 0;
-    let start = 0;
+    let start = 0; // timestamp of the current animation run (0 = not set yet)
+    let startedAt = 0; // when the very first run began
     let lastWidth = 0;
     let cells: Cell[] = [];
 
@@ -168,6 +169,7 @@ export default function PixelField() {
       if (t < DURATION + 100) raf = requestAnimationFrame(loop);
     };
 
+    startedAt = performance.now();
     setup();
     if (reduce) {
       draw(1e9);
@@ -179,7 +181,14 @@ export default function PixelField() {
       if (parent.clientWidth === lastWidth) return;
       cancelAnimationFrame(raf);
       setup();
-      draw(1e9);
+      if (reduce || performance.now() - startedAt > DURATION + 100) {
+        // animation already finished (or motion is off): just redraw final state
+        draw(1e9);
+      } else {
+        // resize happened mid-animation: restart it instead of jumping to the end
+        start = 0;
+        raf = requestAnimationFrame(loop);
+      }
     });
     ro.observe(parent);
 
